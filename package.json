@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/evapopp/Tech-Blog/issues"
   },
-  "homepage": "https://github.com/evapopp/Tech-Blog#readme"
+  "homepage": "https://github.com/evapopp/Tech-Blog#readme",
+  "dependencies": {
+    "express-handlebars": "^5.3.4",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
 }
