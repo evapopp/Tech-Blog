@@ -1,9 +1,9 @@
 [
     {
-      "post_title": "test",
-      "contents": "this is a test",
-      "author": "your mom",
-      "date": "1/22/29"
+        "post_title": "test",
+        "contents": "this is a test",
+        "author": "your mom",
+        "date": "1/22/29"
     },
     {
         "post_title": "test2",

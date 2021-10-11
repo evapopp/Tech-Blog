@@ -26,7 +26,13 @@ Blog.init(
         date: {
             type: DataTypes.STRING,
             allowNull: false,
-            // figure out how to auto make date**
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
         },
     },
     {
