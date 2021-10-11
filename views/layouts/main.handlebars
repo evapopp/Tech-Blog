@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>
+            <span id="italics">The</span> Tech Blog 
+        </h1>
+        <div class='navbar'>
+            <div class='navBtn'>
+                <a href='homepage'>Homepage</a>
+            </div>
+            <div class='navBtn'>
+                <a href='dashboard'>Dashboard</a>
+            </div>
+            <div class='navBtn'>
+                <a href='./login.handlebars'>Log In</a>
+            </div>
+            
+        </div>
+    </div>
+    <main class="container container-fluid mt-5">
+         <!-- Render the contents of the sub layout here -->
+        {{{ body }}}
+    </main>
+
+
+</body>
+</html>
