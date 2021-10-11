@@ -32,7 +32,7 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                length: [8],
+                len: [8, 25],
             },
         },
     },

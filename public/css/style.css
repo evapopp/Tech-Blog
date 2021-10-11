@@ -43,5 +43,9 @@ a {
 
 .blog-title {
     color: black;
-    font-size: 100px;
+    font-size: 70px;
+}
+
+.author {
+    font-style: italic;
 }

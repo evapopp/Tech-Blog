@@ -3,8 +3,8 @@ const  { User } = require('../../models');
 
 router.get('/', async (req, res) => {
     try {
-        const usera = await User.findAll();
-        res.status(200).json(usera);
+        const user = await User.findAll();
+        res.status(200).json(user);
     } catch (err) {
         res.status(400).json(err);
     }  
