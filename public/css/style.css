@@ -41,11 +41,18 @@ a {
     color: white;
 }
 
-.blog-title {
-    color: black;
-    font-size: 70px;
-}
 
 .author {
     font-style: italic;
+    color:silver;
+    margin-bottom: 8px;
+}
+
+
+.blog-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: sandybrown solid 5px;
 }

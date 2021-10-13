@@ -1,13 +1,18 @@
-
-<section class="container">
-    <h3 class="blog-title">
-        {{ blog.post_title }}
+{{#each blog as |blog|}}
+<div class='home-container'>
+  <section class='blog-section'>
+    <h2>
+      <div class='/posts/{{blog.id}}'>{{blog.post_title}}</div>
+    </h2>
+    <h3>
+      <p>
+        Author: {{blog.author}}
+      </p>
     </h3>
-    <section class="content">
-        <h4 class="author">Author: {{ blog.author }}</h4>
-        <br>
-        <h5 class="post">{{blog.contents}}</h5>
-    </section>
-    
-    This is a dashboard
-</section>
+    <h4>
+      <p>{{blog.contents}}</p>
+    </h4>
+  </section>
+</div>
+
+{{/each}}

@@ -1,18 +1,18 @@
 [
     {
-        "post_title": "test",
+        "post_title": "test title 1",
         "contents": "this is a test",
         "author": "your mom",
         "date": "1/22/29"
     },
     {
-        "post_title": "test2",
+        "post_title": "test title 2",
         "contents": "this is a test2",
         "author": "your mom again",
         "date": "2/22/29"
     },
     {
-        "post_title": "test3",
+        "post_title": "test title 3",
         "contents": "this is a test3",
         "author": "still your mom",
         "date": "3/22/29"

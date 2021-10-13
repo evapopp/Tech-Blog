@@ -1,5 +1,16 @@
-
-<div>
-  Put a blog post hereeee
-  {{blog.post_title}}
+{{#each blog as |blog|}}
+<div class='home-container'>
+  <section class='blog-section'>
+    <h2>
+      <div class='/posts/{{blog.id}}'>{{blog.post_title}}</div>
+    </h2>
+    <div class='author'>
+        By: {{blog.author}}
+    </div>
+    <h4>
+      <p>{{blog.contents}}</p>
+    </h4>
+  </section>
 </div>
+
+{{/each}}

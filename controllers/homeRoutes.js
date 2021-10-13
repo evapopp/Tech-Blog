@@ -15,7 +15,6 @@ router.get('/', async (req, res) => {
     });
     const blog = blogData.map((blog) => blog.get({ plain: true })
     );
-    console.log(blog)
     res.render('homepage', { blog });
   } catch (err) {
     console.log(err)
@@ -35,6 +34,10 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard');
+})
 
 
 // router.get('/dash/:id', async (req, res) => {
