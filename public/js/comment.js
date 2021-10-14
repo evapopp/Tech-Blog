@@ -18,7 +18,7 @@ const addComment = async (event) => {
         if (comment.ok) {
             // If successful, redirect the browser to the profile page
             document.location.reload();
-            console.log('-------we must be ding something righhhhhttt--------')
+            console.log('-------we must be doing something righhhhhttt--------')
         } else {
             alert("Your comment was unable to be posted.");
         }
@@ -29,4 +29,4 @@ const addComment = async (event) => {
 
 document
   .querySelector('.commentBtn')
-  .addEventListener('click', addComment);
+  .addEventListener('submit', addComment);
