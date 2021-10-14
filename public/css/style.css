@@ -59,3 +59,26 @@ a {
     margin-bottom: 10px;
     border-bottom: sandybrown solid 5px;
 }
+
+#comment-form {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#comment-text {
+    font-size: 16px;
+    padding: 4px;
+}
+
+.comment-input {
+    width: 70%;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.commentBtn {
+    max-height: 100px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -4,14 +4,20 @@
     <h2>
       <div class='/posts/{{blog.id}}'>{{blog.post_title}}</div>
     </h2>
-    <h3>
-      <p>
-        Author: {{blog.author}}
-      </p>
-    </h3>
+    <div class='author'>
+        By: {{blog.author}}
+    </div>
     <h4>
       <p>{{blog.contents}}</p>
     </h4>
+    <form id='comment-form'>
+      <span id='comment-text'>Comment on this post:</span>
+      <br>
+      <input class='comment-input' type='text'/>
+      <button class='commentBtn'>Submit Comment</buton>
+    </form>
+
   </section>
 </div>
+
 {{/each}}
