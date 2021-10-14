@@ -1,5 +1,5 @@
 const logIn = async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
   
     // Collect values from the login form
     const email = document.querySelector('#email-login').value.trim();
@@ -15,39 +15,16 @@ const logIn = async (event) => {
   
       if (login.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/dashboard');
+        document.location.replace('/');
       } else {
         alert("Please enter a valid email, and a password at least 8 characters long");
       }
     }
 };
 
-const signUp = async (event) => {
-    event.preventDefault();
 
-    const name = document.querySelector('#name-signup').value.trim();
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
-
-    if (name && email && password) {
-        const response = await fetch('/api/users', {
-        method: 'POST',
-        body: JSON.stringify({ name, email, password }),
-        headers: { 'Content-Type': 'application/json' },
-        });
-
-        if (response.ok) {
-        document.location.replace('/dashboard');
-        } else {
-        alert(response.statusText);
-        }
-    }
-};
 
 document
   .querySelector('.login-form')
   .addEventListener('submit', logIn);
 
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signUp);
