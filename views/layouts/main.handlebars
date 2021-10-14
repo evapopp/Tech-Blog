@@ -14,16 +14,21 @@
             <span id="italics">The</span> Tech Blog 
         </h1>
         <div class='navbar'>
+            {{#if logged_in}}
             <div class='navBtn'>
-                <a href='/homepage'>Homepage</a>
+                <a href="/homepage">Homepage</a>
             </div>
             <div class='navBtn'>
                 <a href='/dashboard'>Dashboard</a>
             </div>
             <div class='navBtn'>
-                <a href='/login'>Log In</a>
+                <div id='logout'>Log Out</div>
             </div>
-            
+            {{else}}
+            <div class='navBtn'>
+                <a href="/login">Log In</a>
+            </div>
+            {{/if}}
         </div>
     </div>
     <main class="container container-fluid mt-5">
@@ -31,7 +36,8 @@
         {{{ body }}}
         
     </main>
-
-
+    {{#if logged_in}}
+        <script src="../js/logout.js"></script>
+    {{/if}}
 </body>
 </html>

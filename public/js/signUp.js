@@ -16,7 +16,7 @@ const signUp = async (event) => {
         if (response.ok) {
         document.location.replace('/homepage');
         } else {
-        alert(response.statusText);
+        alert('Please enter a valid email address and make sure your password is between 8 and 25 characters long');
         }
     }
 };
