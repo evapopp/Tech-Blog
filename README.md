@@ -7,7 +7,7 @@ Create a CMS-style blog site similar to a Wordpress site, where developers can p
 Heroku, Express-Handlebars, Sequalize, Express-Session Javascript, CSS, HTML, 
 
 ## Links
-* Deployed: 
+* Deployed: https://rocky-caverns-74706.herokuapp.com/
 * Repo: https://github.com/evapopp/Tech-Blog
 
 ## Page Preview
