@@ -17,7 +17,7 @@ const logIn = async (event) => {
         // If successful, redirect the browser to the profile page
         document.location.replace('/');
       } else {
-        alert("Please enter a valid email, and a password at least 8 characters long");
+        alert("Oops! Your email or password did not work! Make sure you have signed up first and then try again!");
       }
     }
 };

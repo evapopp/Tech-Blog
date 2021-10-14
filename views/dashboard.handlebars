@@ -1,16 +1,15 @@
 {{#each blog as |blog|}}
 <div class='home-container'>
   <section class='blog-section'>
-    <h2>
+    <h2 id='blog-title'>
       <div class='/posts/{{blog.id}}'>{{blog.post_title}}</div>
     </h2>
     <div class='author'>
-        By: {{blog.author}}
+        {{blog.date}} By: {{blog.author}}
     </div>
     <h4>
       <p>{{blog.contents}}</p>
     </h4>
-    <p class='/posts/{{comment.id}}'>Here's comment: {{blog.comment}} or {{comment}} or {{comment.id}}</p>
     <form id='comment-form'>
       <span id='comment-text'>Comment on this post:</span>
       <br>
@@ -21,6 +20,7 @@
   </section>
 </div>
 <div id='secret' class='/posts/{{blog.id}}'>{{blog.id}}</div>
+
 {{/each}}
 
 <script src='../js/comment.js'></script>

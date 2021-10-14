@@ -44,6 +44,18 @@ a {
     color: white;
 }
 
+.home-section {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#home-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
 
 .author {
     font-style: italic;
@@ -51,6 +63,9 @@ a {
     margin-bottom: 8px;
 }
 
+#blog-title {
+    font-style: italic;
+}
 
 .blog-section {
     margin-left: 50px;
@@ -58,6 +73,7 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: sandybrown solid 5px;
+    /* font-style: italic; */
 }
 
 #comment-form {

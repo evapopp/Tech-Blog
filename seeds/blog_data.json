@@ -1,20 +1,38 @@
 [
     {
-        "post_title": "test title 1",
-        "contents": "this is a test",
-        "author": "your mom",
-        "date": "1/22/29"
+        "post_title": "Why did I stayed up all night? A reflection.",
+        "contents": "Lets be honest...it was this homework. No matter how hard I try, I'm still sifting through errors. But it wasn't just this homework, it was the one before that and the one before that. And to be honest I haven't slept in 5 months.",
+        "author": "Quinn",
+        "date": "9/29/20"
     },
     {
-        "post_title": "test title 2",
-        "contents": "this is a test2",
-        "author": "your mom again",
-        "date": "2/22/29"
+        "post_title": "Handlebars, Routes, and Models - Why I thought, my bootcamp was going to help me build a bike.",
+        "contents": "I'm joking. I didn't expect to build a bike at the end of my time here. But at this point, maybe I should consider a bike mechanic life. At least then I could ride myself away far, far away from my computer on my completed project.",
+        "author": "Jesse",
+        "date": "10/02/21"
     },
     {
-        "post_title": "test title 3",
-        "contents": "this is a test3",
-        "author": "still your mom",
-        "date": "3/22/29"
+        "post_title": "A tale of heroku, friend or foe?",
+        "contents": "You'd say friend, right? He lets you deploy your webste...actually to put it more eloquently he 'hosts' it for you. But for a entry level web devleoper, it has been a battle and we are at best, frenemies.",
+        "author": "Shay",
+        "date": "10/17/21"
+    },
+    {
+        "post_title": "A tale of heroku, continued..",
+        "contents": "When I first met heroku, I was always coming to him, asking for him to help with my website. Maybe it was the language barrier or maybe it's just him being stubborn, but he would reject my build requests.",
+        "author": "Shay",
+        "date": "10/18/21"
+    },
+    {
+        "post_title": "A tale of heroku, a friendship?",
+        "contents": "I started to use different commands to once again ask for his assistance, and then every once in a while, he would begrudingly 'host' my site. ",
+        "author": "Shay",
+        "date": "10/19/21"
+    },
+    {
+        "post_title": "A tale of heroku, fin",
+        "contents": "The thing is, he needs my site as much as I need his help, so at the end of the day, heroku is not actually my foe. He is my comrade.",
+        "author": "Shay",
+        "date": "10/20/21"
     }
 ]

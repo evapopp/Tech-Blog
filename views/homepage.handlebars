@@ -1,15 +1,31 @@
+    {{#if logged_in}}
+    <section class='home-section'>
+      <div id='home-text'>
+        Head to your dashboard to read these blogs!
+      </div>
+    </section>
+  {{else}}
+  <div class="home-container">
+    <section class='home-section'>
+      <div id='home-text'>
+        Log into your Tech Blog account to read through the blog posts listed below and add your comments! 
+      </div>
+    </section>
+  </div>
+{{/if}}
+
 {{#each blog as |blog|}}
-<div class='home-container'>
+<div class='blog-container'>
   <section class='blog-section'>
-    <h2>
+    <h3>
       <div id='blog-title' class='/posts/{{blog.id}}'>{{blog.post_title}}</div>
-    </h2>
+    </h3>
     <div class='author'>
         By: {{blog.author}}
     </div>
-    <h4>
+    {{!-- <h4>
       <p>{{blog.contents}}</p>
-    </h4>
+    </h4> --}}
   </section>
 </div>
 
