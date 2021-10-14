@@ -10,6 +10,7 @@
     <h4>
       <p>{{blog.contents}}</p>
     </h4>
+    <p>Here's comment: {{blog.comment}} or {{comment}} or {{comment.comment}}</p>
     <form id='comment-form'>
       <span id='comment-text'>Comment on this post:</span>
       <br>
@@ -19,5 +20,7 @@
 
   </section>
 </div>
-
+<div id='secret' class='/posts/{{blog.id}}'>{{blog.id}}</div>
 {{/each}}
+
+<script src='../js/comment.js'></script>

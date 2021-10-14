@@ -57,34 +57,16 @@ router.get('/login', (req, res) => {
 
 router.get('/dashboard', async (req, res) => {
   try {
-    const blogData1 = await Blog.findAll();
-    const blog = blogData1.map((blog) => blog.get({ plain: true}));
+    const blogAndComment = await Blog.findAll({
+      include: [Comment],
+    });
+    const blog = blogAndComment.map((blog) => blog.get({ plain: true}));
     res.render('dashboard', {blog, logged_in: req.session.logged_in});
   } catch (err) {
   res.status(400).json(err);
   }
 })
 
-// router.get('/dashboard', withAuth, async (req, res) => {
-//   try{
-//     const blogData = await Blog.findAll(req.session.user_id
-//       // {
-//     //   attributes: { exclude: ['password'] },
-//     //   // include: [{ 
-//     //   //   model: Blog,
-//     //   //   attributes: ['id', 'post_title', 'author', 'content']
-//     //   // }],
-//     // }
-//     );
-//     const blog = blogData.get({ plain:true });
-//     res.render('dashboard', {
-//       ...blog,
-//       logged_in: true,
-//     });
-//   } catch (err){
-//     res.status(500).json(err);
-//   }
-// })
 
 
 router.get('/dashboard/:id', async (req, res) => {
